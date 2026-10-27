@@ -18,6 +18,10 @@ screenshots and examples. Review GitHub deployment records, check target URLs,
 comments and workflow logs as well: a direct hosting integration can publish
 those links even when source files contain no production hostname. Disabling
 comments alone does not remove deployment records or historical commit statuses.
+Use the source repository's README or a documentation site as the Website URL.
+Some hosting integrations populate an empty Website field after deployment;
+verify that the documentation URL remains in place after a subsequent deploy,
+as well as after connecting or reconnecting the repository.
 For an installation that must not be linked from the repository, disable Pull
 Request Comments, Commit Comments, `deployment_status` Events, unused
 `repository_dispatch` Events and Commit Status in Vercel's Git settings. Keep
@@ -79,7 +83,7 @@ and [operations](OPERATIONS.md#upgrades).
       and deployment records. Hosting account slugs and names can appear here
       even when source files are clean. Decide which public attribution is
       intentional and remove or separate unwanted historical records.
-- [ ] For a personal installation, leave the Website field empty and verify
+- [ ] For a personal installation, point Website to source documentation and verify
       there are no hosting links in current or historical repository metadata.
       Confirm that invited players still use the normal sign-in flow.
 - [ ] Keep original repositories, recovery bundles, exports and cloud projects
