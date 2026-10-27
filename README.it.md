@@ -32,6 +32,12 @@ e contributi anche dall’estero.
 Il codice è distribuito con licenza **AGPL-3.0-only**. Il repository rimane privato
 finché il manutentore non decide esplicitamente di pubblicarlo.
 
+L’installazione personale del manutentore è un servizio separato, accessibile
+solo su invito. Non è una demo pubblica né un servizio condiviso per chi visita
+il repository. Leggere, clonare o contribuire al codice non dà accesso a quella
+installazione, ai suoi account, alle campagne o ai file. La guida permette di
+creare una propria istanza con progetti cloud e inviti propri.
+
 L’interfaccia è disponibile in **italiano e inglese**. Usa il toggle **ITA / ENG**
 nella schermata di accesso o nella barra del tavolo: la scelta viene ricordata
 nel browser e si applica subito, senza ricaricare o perdere la selezione del token.

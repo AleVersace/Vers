@@ -4,6 +4,46 @@ The repository remains private until the maintainer explicitly changes its
 visibility. An open-source license does not publish GitHub data or authorize
 access to a hosted campaign.
 
+## Public source and a personal installation
+
+Source publication and service access are separate decisions. The maintainer's
+personal installation remains invitation-only and is not offered as a public
+demo. Repository readers install their own copy using independent Firebase,
+Supabase and hosting projects. Publishing the code must not create invitations,
+make Storage public, enable self-service campaign access or change any live
+authorization rule.
+
+Keep the personal site's address out of the repository's Website field, README,
+screenshots and examples. Review GitHub deployment records, check target URLs,
+comments and workflow logs as well: a direct hosting integration can publish
+those links even when source files contain no production hostname. Disabling
+comments alone does not remove deployment records or historical commit statuses.
+For an installation that must not be linked from the repository, disable Pull
+Request Comments, Commit Comments, `deployment_status` Events, unused
+`repository_dispatch` Events and Commit Status in Vercel's Git settings. Keep
+Consolidated Commit Status disabled too. These outbound notifications are
+separate from Git-triggered builds and the incoming GitHub `verify` Deployment
+Check. Verify both a successful automatic deployment and the absence of new
+hosting links after changing the settings; do not disable CI or its blocking
+production check.
+
+Those controls do not erase historical metadata. GitHub's commit-status API
+can list or create statuses but does not provide a delete operation. Where a
+strict no-hosting-links policy includes historical statuses, retain the existing
+repository privately and import the reviewed Git source into a fresh repository
+without its deployment records, comments or status objects. Reconnect hosting
+only after disabling notifications, then test again before any publication.
+
+The application protects campaign data with verified Google identities,
+enabled invitations and database/Storage policies. Its sign-in page is reachable
+on the configured hostname by default. Hiding that page too requires a separate
+hosting/access-gateway policy and a verified access path for invited players.
+An unlisted URL is not an authorization control.
+
+The optional source link goes **from the installed application to its source**.
+It does not require publishing a reverse link from the repository to a personal
+installation, nor does it grant access to that installation.
+
 ## Release workflow
 
 The same repository can be public and remain the source for the maintainer's
@@ -39,6 +79,9 @@ and [operations](OPERATIONS.md#upgrades).
       and deployment records. Hosting account slugs and names can appear here
       even when source files are clean. Decide which public attribution is
       intentional and remove or separate unwanted historical records.
+- [ ] For a personal installation, leave the Website field empty and verify
+      there are no hosting links in current or historical repository metadata.
+      Confirm that invited players still use the normal sign-in flow.
 - [ ] Keep original repositories, recovery bundles, exports and cloud projects
       private. Publish a clean source archive with `git archive`, never a zip
       of the entire working directory. Do not mirror old refs into a clean repo.

@@ -6,6 +6,14 @@ character, profile and asset access even when a client bypasses the interface.
 Account email, first/last name and panel layout are visible only to their owner.
 The campaign roster exposes display name, avatar, role and character name.
 
+Repository access and installation access are independent. A public source
+repository does not authorize its visitors to use the maintainer's personal
+installation. Each operator controls their own cloud projects and invitations.
+The default sign-in page can be visited without an account; campaign and file
+access still require authorization. Keeping the address out of documentation
+does not replace these controls. See [publication boundaries](PUBLICATION.md#public-source-and-a-personal-installation)
+for deployment metadata and optional protection of the sign-in page itself.
+
 Disabling an invitation blocks subsequent database and file authorization,
 including existing sessions. It cannot erase data already downloaded. A signed
 asset URL remains usable until its expiry: new URLs last 15 minutes and renew

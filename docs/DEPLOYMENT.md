@@ -263,6 +263,11 @@ Vercel's PR comments and deployment links may reveal the account/team slug.
 Review these metadata before publication. You can disable Pull Request Comments
 and Commit Comments under **Settings → Git** while retaining Commit Status and
 the CI check. This does not erase old comments or existing deployment records.
+For a personal installation that must not be linked from a public source
+repository, follow the [metadata separation procedure](PUBLICATION.md#public-source-and-a-personal-installation),
+including Commit Status and deployment event settings, historical records and
+verification that automatic deployment still works. Keep invitation-based
+access; publishing source does not offer the personal service to the public.
 
 The reference deployment uses Vercel Hobby. Its terms limit it to personal,
 non-commercial use; open-source licensing does not override hosting terms.

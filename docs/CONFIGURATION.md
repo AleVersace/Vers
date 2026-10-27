@@ -121,6 +121,10 @@ signed download parameters or credentials in a public source URL. URLs with
 embedded usernames/passwords are rejected. The source commit and its required
 files must remain accessible; do not delete/rewrite published release history.
 
+This is a link from your installation to its source. It does not advertise your
+installation in the source repository or open it to repository visitors. Keep
+personal installation URLs out of public repository metadata and documentation.
+
 An empty value hides the link during private preparation. A private GitHub link
 does not make source available to users who cannot access that repository. Keep
 the value empty until the source can actually be opened by its intended users;

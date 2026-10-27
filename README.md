@@ -34,6 +34,12 @@ or in the tabletop header. Your choice is saved in this browser.
 Repository visibility is independent of the license: this repository is currently
 private; publishing it is a separate maintainer decision.
 
+The maintainer's personal installation is a separate, invitation-only service.
+It is not a public demo or a shared hosted service for repository visitors.
+Reading, cloning or contributing to this repository grants no access to that
+installation, its accounts, campaigns or files. Follow the setup guide to run
+your own instance with your own cloud projects and invitations.
+
 [Install and deploy](docs/DEPLOYMENT.md) · [Configuration](docs/CONFIGURATION.md) ·
 [Administration](docs/OPERATIONS.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) ·
 [Italian introduction](README.it.md)
