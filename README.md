@@ -1,5 +1,7 @@
 # Vers
 
+![Vers cover illustration: a gold-lined tactical map, round tokens and a twenty-sided die.](docs/assets/vers-cover.webp)
+
 Vers is an **opinionated virtual tabletop** for role-playing games that benefit
 from maps, distance measurements, tokens and shared dice. It is useful across
 many tabletop RPGs, with familiar tools for tactical play and no requirement to

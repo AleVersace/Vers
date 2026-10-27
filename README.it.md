@@ -1,5 +1,7 @@
 # Vers
 
+![Illustrazione di Vers: una mappa tattica con linee dorate, token circolari e un dado a venti facce.](docs/assets/vers-cover.webp)
+
 Vers è un **tavolo virtuale opinionated** per giocare a molti giochi di ruolo
 che hanno bisogno di mappe, misure, token e dadi condivisi. Offre strumenti
 pratici per gestire il tavolo senza imporre il regolamento di un singolo gioco.
