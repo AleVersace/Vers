@@ -45,7 +45,7 @@ export async function publicationGuards(name, { api, apply = false }) {
     { method: 'PUT', path: `${base}/private-vulnerability-reporting` },
   ];
   if (!protection) changes.unshift({ method: 'PUT', path: `${branchPath}/protection`, body: {
-    required_status_checks: { strict: true, contexts: [], checks: [{ context: 'verify', app_id: verify.app.id }] },
+    required_status_checks: { strict: true, checks: [{ context: 'verify', app_id: verify.app.id }] },
     enforce_admins: true, required_pull_request_reviews: null, restrictions: null,
     allow_force_pushes: false, allow_deletions: false,
   } });

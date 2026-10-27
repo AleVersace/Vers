@@ -39,6 +39,8 @@ test('the default mode only prepares a plan and binds verify to GitHub Actions',
   assert.equal(plan.status, 'plan_only');
   assert.equal(f.writes().length, 0);
   assert.deepEqual(plan.changes[0].body.required_status_checks.checks, [{ context: 'verify', app_id: 123 }]);
+  // GitHub rejects requests matching both the legacy contexts and checks schemas.
+  assert.equal(Object.hasOwn(plan.changes[0].body.required_status_checks, 'contexts'), false);
 });
 
 test('failed CI and existing custom branch rules are not bypassed or overwritten', async () => {
