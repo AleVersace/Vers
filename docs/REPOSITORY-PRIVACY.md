@@ -12,6 +12,11 @@ repository. Operator credentials, live project identifiers, invitations, player
 records, database exports, uploaded game artwork and private audit evidence do
 not. Use example addresses and UUIDs in documentation.
 
+Installation addresses also stay outside the source repository. The privacy
+scanner rejects concrete Vercel deployment hostnames in file contents and names;
+use reserved example domains in guides. Review GitHub metadata separately,
+because a file scanner cannot inspect provider-generated deployment links.
+
 The author's public GitHub handle, repository URL and GitHub noreply commit
 identity are deliberate attribution. Dependency authors, license contacts and
 upstream package notices are also legitimate attribution. Do not remove those

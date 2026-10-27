@@ -4,9 +4,26 @@ import { mkdtemp, mkdir, copyFile, writeFile, symlink, rm } from 'node:fs/promis
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { repositoryPrivacyViolations as violations } from '../scripts/repository-privacy.mjs';
+import { repositoryPrivacyViolations as violations, redactRepositoryPath } from '../scripts/repository-privacy.mjs';
 
 const contact = ['privacy-canary', 'mail.invalid'].join('@');
+
+test('installation hostnames are blocked in docs, filenames and generated previews', () => {
+  for (const label of ['private-table', 'private-table-build123-personal-team', 'x']) {
+    const host = [label, 'vercel', 'app'].join('.');
+    for (const content of [`https://${host}/`, host.toUpperCase(), `https://${host}/?source=readme`]) {
+      assert.deepEqual(violations('README.md', content), ['installation deployment hostname']);
+    }
+    assert.deepEqual(violations(`docs/${host}.md`, ''), ['installation deployment hostname']);
+    assert.equal(redactRepositoryPath(`docs/${host}.md`), 'docs/[redacted-host].md');
+  }
+});
+
+test('provider documentation and reserved example URLs remain usable in setup guides', () => {
+  for (const url of ['https://vercel.com/docs/deployments', 'https://example.com/table', 'http://localhost:3000']) {
+    assert.deepEqual(violations('docs/DEPLOYMENT.md', url), []);
+  }
+});
 
 test('privacy checks cover documentation and arbitrary first-party files without echoing the address', () => {
   for (const path of ['README.md', 'docs/OPERATIONS.md', 'notes.txt', 'app/page.tsx']) {

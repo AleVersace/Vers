@@ -2,6 +2,7 @@ const forbiddenFilename = /(^|\/)(\.env(?!\.example$)(?:\.|$)|credentials(?:\/|\
 const emailPattern = /[\w.+-]+@[\w.-]+\.[a-z]{2,}/gi;
 const exampleDomains = new Set(['example.test', 'example.com', 'example.net', 'example.org', 'example.invalid']);
 const personalHomePath = /(?:\/(?:Users|home)\/[^/\s"'<>]+\/|[a-z]:[\\/]+Users[\\/]+[^\\/\r\n"'<>]+[\\/])/i;
+const deploymentHostname = /\b[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.vercel\.app\b/i;
 
 function firstPartyEmailContent(file, content) {
   // Preserve required upstream attribution. Gitleaks still scans these files.
@@ -28,6 +29,7 @@ export function repositoryPrivacyViolations(file, content) {
   const violations = [];
   if (forbiddenFilename.test(file)) violations.push('credential or backup filename');
   if (personalHomePath.test(file) || personalHomePath.test(content)) violations.push('personal home-directory path');
+  if (deploymentHostname.test(file) || deploymentHostname.test(content)) violations.push('installation deployment hostname');
   const emailContent = `${file}\n${firstPartyEmailContent(file, content)}`.replaceAll('\\.', '.');
   for (const email of emailContent.match(emailPattern) ?? []) {
     const domain = email.slice(email.indexOf('@') + 1).toLowerCase();
@@ -38,5 +40,6 @@ export function repositoryPrivacyViolations(file, content) {
 }
 
 export function redactRepositoryPath(file) {
-  return file.replace(emailPattern, '[redacted-email]').replace(personalHomePath, '[redacted-home]/');
+  return file.replace(emailPattern, '[redacted-email]').replace(personalHomePath, '[redacted-home]/')
+    .replace(new RegExp(deploymentHostname.source, 'gi'), '[redacted-host]');
 }
