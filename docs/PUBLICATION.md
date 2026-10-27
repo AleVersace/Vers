@@ -61,6 +61,74 @@ and [operations](OPERATIONS.md#upgrades).
       Some settings are unavailable on a free private repository: recheck them
       after publication rather than claiming they are already enforced.
 
+## Prepared launch procedure
+
+Complete the file/history/metadata review while the repository is private.
+Do not change visibility as a way to test the following commands. There is no
+script or workflow in this repository that publishes it automatically.
+
+The maintainer helper uses an authenticated GitHub CLI (`gh`) account with
+administration access to the explicit target. It reads repository metadata in
+memory and emits only a bounded plan; do not save raw repository API responses,
+which can include temporary clone credentials.
+
+```sh
+# Read-only. Replace the explicit target with your repository.
+node scripts/publication-guards.mjs YOUR_ACCOUNT/YOUR_REPO
+```
+
+For a private repository it reports `waiting_for_publication` and makes no
+writes. After the maintainer has **separately authorized and performed** the
+visibility change, run it again to inspect the proposed controls. Then:
+
+```sh
+node scripts/publication-guards.mjs YOUR_ACCOUNT/YOUR_REPO --apply
+```
+
+The helper refuses private or archived repositories, requires the latest
+successful `verify` check on the current default-branch commit, checks that the
+target has not changed, and configures:
+
+- required `verify` checks from the actual GitHub Actions app, with an up-to-date
+  branch, enforcement for administrators, and no force pushes or branch deletion;
+- read-only Actions tokens and no workflow approval of PRs;
+- approval for workflows from all external fork contributors;
+- private vulnerability reporting.
+
+It reads the settings back before reporting success. Existing branch protection
+that does not match these minimums requires manual review; the tool will not
+overwrite custom rules. Stronger matching protection is retained. If an API
+call fails, some earlier protections may already be applied: inspect the error
+and rerun after resolving it, rather than disabling protections to finish.
+Organization rulesets or provider restrictions may require additional review.
+
+With required GitHub checks, an untested direct edit to `main` may be rejected.
+Use a branch, wait for `verify`, then merge the reviewed PR; Vercel still deploys
+the resulting `main` commit automatically after its own blocking check. No
+second person's approval is required by this single-maintainer baseline, so
+the maintainer is not locked out of their own PRs. Add reviewer requirements
+deliberately when there are enough trusted maintainers.
+
+Finally configure the [commit-specific source URL](CONFIGURATION.md#source-link-for-automatic-releases),
+update statements that the repository is private, deploy, and verify the source
+link and the private vulnerability-reporting form as an ordinary GitHub user.
+Keep a record of the exact deployed commit and smoke-check result.
+
+## Scope of remaining checks
+
+The publication controls above are distinct from running a production service.
+A backup restore drill and a two-user hosted smoke test improve operational
+confidence; their absence is not evidence of leaked source or a reason to
+declare the repository unsafe to read. Record those tests honestly rather than
+treating synthetic RLS tests as a full cloud recovery rehearsal.
+
+Hosting account names in check URLs are public attribution, not credentials.
+Changing the application hostname does not remove the team slug from existing
+provider links. Review and accept the intended attribution before publication.
+Name/domain availability and permission to distribute future artwork are
+separate from the source security audit. This repository ships no player artwork
+and makes no claim of affiliation with game publishers.
+
 ## Why rewriting history may not be sufficient
 
 A force-push updates ordinary refs, but old commits can remain reachable through

@@ -1,0 +1,33 @@
+name: Bug report / Segnala un bug
+description: Reproduce a problem using synthetic, non-sensitive examples.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities, follow SECURITY.md instead of filing a public issue.
+        Do not include tokens, environment files, private URLs, real player records or campaign artwork.
+        Italiano: non inserire credenziali, dati dei giocatori o materiale privato. Puoi scrivere in italiano o inglese.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce / Come riprodurlo
+      description: Use a minimal example with fictional names and data.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior / Comportamento atteso ed effettivo
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit, browser and operating system / Versione, browser e sistema operativo
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized diagnostics / Diagnostica senza dati privati
+      description: Optional. Remove identities, signed URLs and private data before attaching logs or screenshots.

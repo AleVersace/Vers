@@ -1,7 +1,9 @@
 # Security
 
 Report vulnerabilities privately through GitHub's **Report a vulnerability**
-action in the repository's Security tab. Do not put exploit details, credentials,
+action in the repository's Security tab once the repository is public and the
+maintainer has enabled it. During private preparation, this GitHub feature is
+not available. Do not put exploit details, credentials,
 JWTs, personal email addresses or campaign data in a public issue. If private
 reporting is not available, ask the maintainer for a private channel without
 including sensitive details. Never test against someone else's live installation.

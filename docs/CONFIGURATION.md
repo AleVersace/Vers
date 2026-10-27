@@ -21,6 +21,7 @@ for hosted execution instead of uploading this file.
 | `FIREBASE_ADMIN_CLIENT_EMAIL` | Service-account JSON `client_email` | Required on server; account identity, not the owner's Google email |
 | `FIREBASE_ADMIN_PRIVATE_KEY` | Service-account JSON `private_key` | Required on server; confidential signing credential |
 | `NEXT_PUBLIC_SOURCE_URL` | URL of the source for your deployed version | Optional during private preparation; configure before distributing a hosted modified version |
+| `SOURCE_COMMIT` | Full 40-character Git revision of the build | Build-only fallback for a `{commit}` source URL outside Vercel; not an application credential |
 
 The current client reads four Firebase web fields. The additional
 `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` and
@@ -98,6 +99,32 @@ them. Update a server secret with a fresh deployment too, then check login befor
 revoking the old credential. See
 [Next.js environment variables](https://nextjs.org/docs/app/guides/environment-variables)
 and [Vercel environment variables](https://vercel.com/docs/environment-variables).
+
+## Source link for automatic releases
+
+After making the source accessible to the intended users, set this public URL
+on the deployment, replacing the account/repository placeholders:
+
+```dotenv
+NEXT_PUBLIC_SOURCE_URL=https://github.com/YOUR_ACCOUNT/YOUR_REPO/tree/{commit}
+```
+
+The build replaces `{commit}` with Vercel's `VERCEL_GIT_COMMIT_SHA`. System
+Environment Variables must be enabled in Vercel. On another host, supply
+`SOURCE_COMMIT` with the exact full Git SHA being built. The Vercel value takes
+precedence when present. An unresolved placeholder or malformed revision fails
+the build instead of publishing a broken link. Plain HTTP(S) source/archive
+URLs remain supported for operators managing their own release downloads.
+
+Only the resulting URL is exposed to the client. Do not include access tokens,
+signed download parameters or credentials in a public source URL. URLs with
+embedded usernames/passwords are rejected. The source commit and its required
+files must remain accessible; do not delete/rewrite published release history.
+
+An empty value hides the link during private preparation. A private GitHub link
+does not make source available to users who cannot access that repository. Keep
+the value empty until the source can actually be opened by its intended users;
+then deploy again and test the link while signed out or as an intended recipient.
 
 ## What is not an application setting
 

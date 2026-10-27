@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Private operator files are not distributable application source.
+    "work/**",
+    "outputs/**",
+    "backups/**",
+    "credentials/**",
+    "secrets/**",
   ]),
 ]);
 
