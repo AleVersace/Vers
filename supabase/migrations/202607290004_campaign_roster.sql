@@ -1,0 +1,3 @@
+-- Historical operational migration intentionally empty.
+-- Access grants belong to each private installation, never to source control.
+-- Keep this version so existing installations retain their migration history.

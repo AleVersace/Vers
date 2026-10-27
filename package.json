@@ -1,0 +1,50 @@
+{
+  "name": "vers",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0 <23"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run build && node --test",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "supabase": "supabase",
+    "supabase:login": "supabase login --output-format text --agent no",
+    "supabase:link": "supabase link --output-format text --agent no",
+    "supabase:push": "supabase db push --linked",
+    "firebase:set-role": "node scripts/set-firebase-role.mjs",
+    "setup:initialize": "node --env-file=.env.local scripts/setup-installation.mjs initialize",
+    "setup:auth": "node --env-file=.env.local scripts/setup-installation.mjs configure-auth",
+    "security:check": "node scripts/security-check.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.111.0",
+    "firebase": "12.19.0",
+    "firebase-admin": "14.5.0",
+    "next": "16.4.3",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.12",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.4.3",
+    "supabase": "^2.110.0",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "postcss": "8.5.25",
+    "sharp": "0.35.5",
+    "@grpc/grpc-js": "1.14.6",
+    "@firebase/app": "0.16.2",
+    "@firebase/app-compat": "0.5.18"
+  },
+  "type": "module",
+  "license": "AGPL-3.0-only"
+}
