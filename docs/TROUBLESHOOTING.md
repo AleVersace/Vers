@@ -6,7 +6,7 @@ account JSON, personal email list or database export into a public discussion.
 
 | Symptom | Checks and recovery |
 | --- | --- |
-| Clone denied / repository not found | The repository is currently private. Use an authorized GitHub account or your own copy; deployment documentation does not grant repository access. |
+| Clone denied / repository not found | Verify the repository URL. The upstream source is public; a private fork requires an authorized GitHub account. Repository access does not grant access to a hosted installation. |
 | Firebase configuration incomplete | Populate the four required Firebase public fields and rebuild/redeploy. Adding only server credentials is insufficient. |
 | Supabase public configuration incomplete | Check the project URL and publishable key for the intended environment, then rebuild. |
 | Google `auth/unauthorized-domain` | Authorize the exact application hostname in the correct Firebase project. For development, add localhost explicitly. Keep the configured Firebase auth domain unless intentionally configuring a custom one. |

@@ -1,8 +1,8 @@
 # Repository privacy and publication
 
-The repository currently remains **private**. The AGPL license and preparation
-work do not themselves change GitHub visibility. Publication is a separate
-maintainer decision.
+Vers publishes its reviewed source under AGPL-3.0-only. The maintainer's personal
+installation, cloud configuration, campaign data and original archive repositories
+remain private. Source access does not grant service access.
 
 ## What belongs in Git
 

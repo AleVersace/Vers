@@ -31,8 +31,8 @@ throws and ADV/DIS; use the parts that fit your game.
 Vers is licensed under **AGPL-3.0-only**. You operate your own installation
 and control its campaigns and user access. The interface supports Italian and English: use the **ITA / ENG** toggle at sign-in
 or in the tabletop header. Your choice is saved in this browser.
-Repository visibility is independent of the license: this repository is currently
-private; publishing it is a separate maintainer decision.
+The source is publicly available for anyone to inspect, install and contribute
+to under that license.
 
 The maintainer's personal installation is a separate, invitation-only service.
 It is not a public demo or a shared hosted service for repository visitors.
@@ -88,14 +88,14 @@ The app is Next.js + React + TypeScript. Dependencies are locked in
 ## Start here
 
 1. Install a current **Node.js 22** patch release and Git.
-2. Clone this repository or your authorized copy:
+2. Clone this repository or your fork:
    ```sh
    git clone https://github.com/AleVersace/Vers.git
    cd Vers
    npm ci
    ```
-   While the repository is private, GitHub must authorize your account. Forks
-   should replace the clone URL with their own repository.
+   Forks should replace the clone URL with their own repository. Private forks
+   require an authorized GitHub account.
 3. Follow [the production setup guide](docs/DEPLOYMENT.md) to create your own
    Firebase and Supabase projects, apply migrations and initialize the first
    campaign. There are no bundled accounts, maps or campaign invitations.

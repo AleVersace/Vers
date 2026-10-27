@@ -2,7 +2,7 @@
 
 The current source uses **Vers** throughout: application copy and metadata,
 components, module paths, CSS, drag formats, diagnostics, test fixtures, setup
-variables and new-installation SQL labels. The repository is private.
+variables and new-installation SQL labels.
 
 This source rename does not require moving production files or changing user
 identities. Existing installations can keep their current cloud resources.

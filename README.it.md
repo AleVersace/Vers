@@ -29,8 +29,8 @@ Alcune comodità riflettono il mio stile di gioco, come HP, classe armatura,
 tiri salvezza e ADV/DIS: puoi usare ciò che serve al tuo gruppo.
 La documentazione tecnica principale è in inglese, per facilitare installazione
 e contributi anche dall’estero.
-Il codice è distribuito con licenza **AGPL-3.0-only**. Il repository rimane privato
-finché il manutentore non decide esplicitamente di pubblicarlo.
+Il codice è pubblico e distribuito con licenza **AGPL-3.0-only**: chiunque può
+consultarlo, installarlo e contribuire nel rispetto della licenza.
 
 L’installazione personale del manutentore è un servizio separato, accessibile
 solo su invito. Non è una demo pubblica né un servizio condiviso per chi visita

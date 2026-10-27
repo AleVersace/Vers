@@ -1,8 +1,8 @@
 # Publishing Vers and keeping automatic deployment
 
-The repository remains private until the maintainer explicitly changes its
-visibility. An open-source license does not publish GitHub data or authorize
-access to a hosted campaign.
+Vers publishes its reviewed source under AGPL-3.0-only. Publishing source does
+not authorize access to a hosted campaign. The checklist below also applies to
+future releases and independently maintained forks.
 
 ## Public source and a personal installation
 
@@ -61,8 +61,8 @@ production deployment:
 4. Only after the build and required check pass do production domains move to
    the new deployment. Verify login, Storage and Realtime after the release.
 
-Direct edits to `main` by a trusted maintainer can use this flow. For substantial
-changes, prefer a branch and reviewed pull request. Public readers can propose
+With required checks enabled, use a branch and reviewed pull request, wait for
+`verify`, then merge into `main`. Public readers can propose
 changes; they cannot deploy to the maintainer's production merely by opening a
 PR. Keep fork protection enabled and never attach production configuration to
 untrusted previews. Database migrations remain a separate, reviewed operation.
