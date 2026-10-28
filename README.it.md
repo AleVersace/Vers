@@ -11,9 +11,8 @@ dalla pagina della demo. È separata dall'installazione personale del manutentor
 
 **[Configura il tuo tavolo](docs/DEPLOYMENT.md)** · [English](README.md)
 
-**[Vers su YouTube](https://www.youtube.com/@VersTabletop)** — trailer, brevi video
-sulle funzionalità e una [guida completa](https://www.youtube.com/watch?v=OmhXaFDmu0M)
-con sottotitoli in italiano e inglese.
+**[Showcase video](docs/SHOWCASE.it.md)** — parti dalla guida completa, poi
+esplora un breve video per ogni funzionalità. [Vers su YouTube](https://www.youtube.com/@VersTabletop).
 
 **Guarda il trailer · 45 secondi · Italiano**
 
