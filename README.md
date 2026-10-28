@@ -2,7 +2,7 @@
 
 **Watch the trailer · 45 seconds · English**
 
-https://github.com/user-attachments/assets/ffe94639-4f7d-4321-9fed-53ef975484c4
+https://github.com/user-attachments/assets/e0db45de-d0a3-4c81-a38c-3cffdd93ee8b
 
 **Download the original Full HD videos:** [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [Credits and details](docs/TRAILER.md)
 

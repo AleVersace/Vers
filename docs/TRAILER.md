@@ -5,14 +5,16 @@ measurements, zoom, macros with advantage, dice results and initiative.
 
 ## Watch in English
 
-https://github.com/user-attachments/assets/ffe94639-4f7d-4321-9fed-53ef975484c4
+https://github.com/user-attachments/assets/e0db45de-d0a3-4c81-a38c-3cffdd93ee8b
 
 ## Guarda in italiano
 
-https://github.com/user-attachments/assets/ada8ed11-79a4-45cd-ad15-8de811fd5ecc
+https://github.com/user-attachments/assets/67abd757-3dd7-4c67-9774-e090eb92ebca
 
 The players above use optimized Full HD copies of the same V2 trailer, hosted
-as GitHub attachments. Click Play to watch here without downloading a file.
+as GitHub attachments. Their first second holds the opening title so the player
+shows a preview instead of a black frame; the remaining scenes and audio keep
+their original timing. Click Play to watch here without downloading a file.
 The original, higher-bitrate MP4 files remain available below.
 
 ## Original downloads
