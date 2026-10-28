@@ -11,6 +11,10 @@ on the demo page. It is separate from the maintainer's personal installation.
 
 **[Set up your own table](docs/DEPLOYMENT.md)** · [Italiano](README.it.md)
 
+**[Vers on YouTube](https://www.youtube.com/@VersTabletop)** — trailers, short
+feature demos and a [full walkthrough](https://www.youtube.com/watch?v=OmhXaFDmu0M)
+with English and Italian subtitles.
+
 **Watch the trailer · 45 seconds · English**
 
 https://github.com/user-attachments/assets/e0db45de-d0a3-4c81-a38c-3cffdd93ee8b
