@@ -1,5 +1,16 @@
 # Vers
 
+Un tavolo virtuale open source e opinionated, con mappe, token e tiri riutilizzabili.
+
+**[Prova la demo nel browser su itch.io](https://aleversace.itch.io/vers)** — senza account.
+Salva Attacco: d20 + 5 o Danni: 2d6 + 3 come macro, cioè un pulsante
+riutilizzabile, e tira con un clic. Prova mappe e token sulla griglia con dati fittizi.
+La demo funziona separatamente in ogni browser e si azzera ricaricando: non ha
+multiplayer né salvataggi delle sessioni. Il relativo codice sorgente è scaricabile
+dalla pagina della demo. È separata dall'installazione personale del manutentore.
+
+**[Configura il tuo tavolo](docs/DEPLOYMENT.md)** · [English](README.md)
+
 **Guarda il trailer · 45 secondi · Italiano**
 
 https://github.com/user-attachments/assets/67abd757-3dd7-4c67-9774-e090eb92ebca
@@ -15,12 +26,6 @@ Musica: “Pathfinder” di Scott Buckley · CC BY 4.0. [Crediti e licenza](docs
 
 </details>
 
-**[Prova la demo nel browser su itch.io](https://aleversace.itch.io/vers)** — senza account.
-Prova macro (pulsanti che salvano i tiri), mappe e token con dati fittizi.
-La demo funziona separatamente in ogni browser e si azzera ricaricando: non ha
-multiplayer né salvataggi delle sessioni. Il relativo codice sorgente è scaricabile
-dalla pagina della demo. È separata dall'installazione personale del manutentore.
-
 Vers è un **tavolo virtuale opinionated** per giocare a molti giochi di ruolo
 che hanno bisogno di mappe, misure, token e dadi condivisi. Offre strumenti
 pratici per gestire il tavolo senza imporre il regolamento di un singolo gioco.
@@ -32,14 +37,16 @@ complicate operazioni che al tavolo dovrebbero essere semplici.
 
 ### Gli elementi distintivi
 
+- **Tiri con un clic:** salva attacchi, danni e altri tiri ricorrenti come
+  pulsanti macro riutilizzabili. Aggiungi bonus temporanei, usa ADV/DIS e
+  condividi i risultati nel log. ADV/DIS confrontano i totali di due tiri dei
+  dadi base e applicano i bonus una sola volta. Per i tiri spot c’è un dado
+  configurabile al volo.
 - **La mappa al centro:** zoom verso il cursore, misure, token, oggetti, disegni,
   ping e nebbia gestiti direttamente sul tavolo.
 - **Controlli a portata di mano:** il dettaglio del token resta selezionato mentre
   usi gli strumenti; pannelli e dock delle macro si possono organizzare e
   trascinare secondo le proprie preferenze.
-- **Tiri rapidi e flessibili:** macro riutilizzabili, dado configurabile al volo,
-  bonus temporanei, tipi di danno e log condiviso. ADV/DIS confrontano i totali
-  di due tiri dei dadi base e applicano i bonus una sola volta.
 - **Gioco condiviso, viste separate:** scene live per i giocatori, vista master,
   personaggi e NPC riutilizzabili e strumenti per l’iniziativa.
 - **Un’installazione tua:** accesso su invito, interfaccia italiana, inglese, francese e tedesca,
