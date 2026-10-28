@@ -4,6 +4,12 @@
 
 **Trailer V2 · 45 seconds · Full HD:** [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [Credits and details](docs/TRAILER.md)
 
+**[Try the browser demo on itch.io](https://aleversace.itch.io/vers)** — no account needed.
+Try macros (saved dice-roll buttons), maps and tokens with fictional data.
+The demo runs independently in each browser and resets on reload; it has no
+multiplayer or lasting session saves. Its corresponding source is downloadable
+on the demo page. It is separate from the maintainer's personal installation.
+
 Vers is an **opinionated virtual tabletop** for role-playing games that benefit
 from maps, distance measurements, tokens and shared dice. It is useful across
 many tabletop RPGs, with familiar tools for tactical play and no requirement to
@@ -110,7 +116,7 @@ The app is Next.js + React + TypeScript. Dependencies are locked in
    Open `http://localhost:3000`. For development, use separate cloud projects
    from production.
 
-There is no one-click offline demo. Running `npm run dev` does not create cloud
+The browser demo above is a separate sandbox. Running `npm run dev` for the full app does not create cloud
 resources, apply migrations or grant access to a Google account. The automated
 test suite, however, uses disposable local data and does not require cloud keys.
 

@@ -4,6 +4,12 @@
 
 **Trailer V2 · 45 secondi · Full HD:** [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Crediti e dettagli](docs/TRAILER.md)
 
+**[Prova la demo nel browser su itch.io](https://aleversace.itch.io/vers)** — senza account.
+Prova macro (pulsanti che salvano i tiri), mappe e token con dati fittizi.
+La demo funziona separatamente in ogni browser e si azzera ricaricando: non ha
+multiplayer né salvataggi delle sessioni. Il relativo codice sorgente è scaricabile
+dalla pagina della demo. È separata dall'installazione personale del manutentore.
+
 Vers è un **tavolo virtuale opinionated** per giocare a molti giochi di ruolo
 che hanno bisogno di mappe, misure, token e dadi condivisi. Offre strumenti
 pratici per gestire il tavolo senza imporre il regolamento di un singolo gioco.
