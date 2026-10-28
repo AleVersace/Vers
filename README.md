@@ -1,5 +1,16 @@
 # Vers
 
+An opinionated, open-source virtual tabletop for maps, tokens and reusable dice rolls.
+
+**[Try the browser demo on itch.io](https://aleversace.itch.io/vers)** — no account needed.
+Save Attack: d20 + 5 or Damage: 2d6 + 3 as a macro — a reusable dice-roll
+button — then click to roll. Try maps and grid-snapped tokens with fictional data.
+The demo runs independently in each browser and resets on reload; it has no
+multiplayer or lasting session saves. Its corresponding source is downloadable
+on the demo page. It is separate from the maintainer's personal installation.
+
+**[Set up your own table](docs/DEPLOYMENT.md)** · [Italiano](README.it.md)
+
 **Watch the trailer · 45 seconds · English**
 
 https://github.com/user-attachments/assets/e0db45de-d0a3-4c81-a38c-3cffdd93ee8b
@@ -15,12 +26,6 @@ Music: “Pathfinder” by Scott Buckley · CC BY 4.0. [Credits and permissions]
 
 </details>
 
-**[Try the browser demo on itch.io](https://aleversace.itch.io/vers)** — no account needed.
-Try macros (saved dice-roll buttons), maps and tokens with fictional data.
-The demo runs independently in each browser and resets on reload; it has no
-multiplayer or lasting session saves. Its corresponding source is downloadable
-on the demo page. It is separate from the maintainer's personal installation.
-
 Vers is an **opinionated virtual tabletop** for role-playing games that benefit
 from maps, distance measurements, tokens and shared dice. It is useful across
 many tabletop RPGs, with familiar tools for tactical play and no requirement to
@@ -33,14 +38,15 @@ make playing faster and easier, not to cover every possible rule or setting.
 
 ### What makes Vers different
 
+- **One-click dice rolls:** save attacks, damage or other recurring rolls as
+  reusable macro buttons. Add temporary bonuses, use ADV/DIS and share results
+  in the roll log. ADV/DIS compare two complete base-dice totals and apply
+  bonuses only once. A configurable quick die handles rolls on the fly.
 - **A map you can work on quickly:** zoom toward the cursor, measure distances,
   place tokens and props, draw, ping and reveal fog without leaving the table.
 - **Controls that stay close to play:** token details remain selected while you
   use map tools; panels can be docked, resized and rearranged, and macro docks
   can be reordered by dragging.
-- **Fast, flexible rolls:** reusable macros and an adjustable quick die, with
-  temporary bonuses, damage types and a shared roll log. ADV/DIS compare two
-  complete base-dice totals and apply bonuses only once.
 - **A shared table, separate views:** live player scenes, a master view, reusable
   characters and NPCs, and initiative tools for encounters.
 - **Your own installation:** invitation-based access, Italian, English, French and German UI,
