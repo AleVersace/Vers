@@ -1,8 +1,19 @@
 # Vers
 
+**Guarda il trailer · 45 secondi · Italiano**
+
+https://github.com/user-attachments/assets/ada8ed11-79a4-45cd-ad15-8de811fd5ecc
+
+**Scarica i video originali Full HD:** [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Crediti e dettagli](docs/TRAILER.md)
+
+Musica: “Pathfinder” di Scott Buckley · CC BY 4.0. [Crediti e licenza](docs/TRAILER.md#music-credit-and-permission).
+
+<details>
+<summary>Illustrazione di copertina</summary>
+
 ![Illustrazione di Vers: una mappa tattica con linee dorate, token circolari e un dado a venti facce.](docs/assets/vers-cover.webp)
 
-**Trailer V2 · 45 secondi · Full HD:** [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Crediti e dettagli](docs/TRAILER.md)
+</details>
 
 **[Prova la demo nel browser su itch.io](https://aleversace.itch.io/vers)** — senza account.
 Prova macro (pulsanti che salvano i tiri), mappe e token con dati fittizi.

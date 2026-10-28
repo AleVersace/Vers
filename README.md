@@ -1,8 +1,19 @@
 # Vers
 
+**Watch the trailer · 45 seconds · English**
+
+https://github.com/user-attachments/assets/ffe94639-4f7d-4321-9fed-53ef975484c4
+
+**Download the original Full HD videos:** [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [Credits and details](docs/TRAILER.md)
+
+Music: “Pathfinder” by Scott Buckley · CC BY 4.0. [Credits and permissions](docs/TRAILER.md#music-credit-and-permission).
+
+<details>
+<summary>Cover artwork</summary>
+
 ![Vers cover illustration: a gold-lined tactical map, round tokens and a twenty-sided die.](docs/assets/vers-cover.webp)
 
-**Trailer V2 · 45 seconds · Full HD:** [English (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) · [Italiano (MP4)](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) · [Credits and details](docs/TRAILER.md)
+</details>
 
 **[Try the browser demo on itch.io](https://aleversace.itch.io/vers)** — no account needed.
 Try macros (saved dice-roll buttons), maps and tokens with fictional data.

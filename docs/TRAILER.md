@@ -3,12 +3,26 @@
 A 45-second introduction to Vers: maps, grid-aligned tokens, distance
 measurements, zoom, macros with advantage, dice results and initiative.
 
+## Watch in English
+
+https://github.com/user-attachments/assets/ffe94639-4f7d-4321-9fed-53ef975484c4
+
+## Guarda in italiano
+
+https://github.com/user-attachments/assets/ada8ed11-79a4-45cd-ad15-8de811fd5ecc
+
+The players above use optimized Full HD copies of the same V2 trailer, hosted
+as GitHub attachments. Click Play to watch here without downloading a file.
+The original, higher-bitrate MP4 files remain available below.
+
+## Original downloads
+
 | Version | Video |
 | --- | --- |
 | English titles | [Download English MP4](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-en-1080p.mp4) |
 | Titoli italiani | [Scarica MP4 italiano](https://github.com/AleVersace/Vers/releases/download/trailer-v2/vers-trailer-v2-it-1080p.mp4) |
 
-Both files are 1920×1080, H.264 video with stereo AAC audio, 45 seconds long.
+All versions are 1920×1080, H.264 video with stereo AAC audio, 45 seconds long.
 The interface shown is in English in both versions. Depending on your browser,
 the MP4 link opens a player or downloads the file for playback.
 The [trailer release](https://github.com/AleVersace/Vers/releases/tag/trailer-v2)
@@ -57,7 +71,9 @@ this public media release.
 
 Questa è la **seconda versione** del trailer, con musica orchestrale, risultato
 del tiro più leggibile e token da una casella ripresi con camera ferma. Sono
-pubblicati entrambi gli MP4, con titoli inglesi e italiani.
+pubblicati entrambi gli MP4, con titoli inglesi e italiani. I player incorporati
+qui e nei README usano copie Full HD ottimizzate; gli originali restano
+scaricabili dai link sopra.
 
 La musica è utilizzabile in progetti anche commerciali con attribuzione CC BY
 4.0. Se ripubblichi il video, conserva il credito sopra e inseriscilo anche
