@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
+import { isLanguage, languageDetails, SUPPORTED_LANGUAGES } from "@/lib/i18n/languages";
 import {
   getLanguage,
   getServerLanguage,
@@ -18,14 +19,14 @@ export function LanguageEffects() {
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
-      if (saved === "it" || saved === "en") setLanguage(saved, false);
+      if (isLanguage(saved)) setLanguage(saved, false);
     } catch {
       /* Italian is the default when storage is unavailable. */
     }
     const sync = (event: StorageEvent) => {
       if (
         event.key === LANGUAGE_STORAGE_KEY &&
-        (event.newValue === "it" || event.newValue === "en")
+        isLanguage(event.newValue)
       )
         setLanguage(event.newValue, false);
     };
@@ -62,7 +63,7 @@ export function LanguageEffects() {
       );
       update(
         ['meta[property="og:locale"]'],
-        language === "en" ? "en_US" : "it_IT",
+        languageDetails[language].openGraphLocale,
       );
     };
     updateMetadata();
@@ -89,24 +90,34 @@ export function LanguageToggle() {
       role="group"
       aria-label={t("Scegli la lingua")}
     >
-      <button
-        type="button"
-        lang="it"
-        aria-label="Italiano"
-        aria-pressed={language === "it"}
-        onClick={() => setLanguage("it")}
+      <div className="language-options">
+        {SUPPORTED_LANGUAGES.map((option) => (
+          <button
+            key={option}
+            type="button"
+            lang={option}
+            aria-label={languageDetails[option].name}
+            aria-pressed={language === option}
+            onClick={() => setLanguage(option)}
+          >
+            {languageDetails[option].label}
+          </button>
+        ))}
+      </div>
+      <select
+        className="language-select"
+        aria-label={t("Scegli la lingua")}
+        value={language}
+        onChange={(event) => {
+          if (isLanguage(event.target.value)) setLanguage(event.target.value);
+        }}
       >
-        ITA
-      </button>
-      <button
-        type="button"
-        lang="en"
-        aria-label="English"
-        aria-pressed={language === "en"}
-        onClick={() => setLanguage("en")}
-      >
-        ENG
-      </button>
+        {SUPPORTED_LANGUAGES.map((option) => (
+          <option key={option} value={option} lang={option}>
+            {languageDetails[option].name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }

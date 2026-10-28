@@ -1,6 +1,9 @@
 import { english, templates, additional } from "./messages.ts";
+import { french } from "./messages.fr.ts";
+import { german } from "./messages.de.ts";
+import type { Language } from "./languages.ts";
 
-export type Language = "it" | "en";
+export type { Language } from "./languages.ts";
 export type TranslationValues = Record<string, string | number>;
 export const catalog: Record<string, string> = Object.assign(
   Object.create(null),
@@ -8,6 +11,11 @@ export const catalog: Record<string, string> = Object.assign(
   templates,
   additional,
 );
+export const catalogs: Record<Exclude<Language, "it">, Record<string, string>> = {
+  en: catalog,
+  fr: Object.assign(Object.create(null), french),
+  de: Object.assign(Object.create(null), german),
+};
 const italian: Record<string, string> = {
   Rolls: "Tiri",
   Logout: "Esci",
@@ -16,11 +24,11 @@ const italian: Record<string, string> = {
 const escapePattern = (value: string) =>
   value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const patterns = Object.entries(templates)
-  .map(([source, target]) => {
+  .map(([source]) => {
     const keys = [...source.matchAll(/\{(p\d+)\}/g)].map((match) => match[1]);
     const parts = source.split(/\{p\d+\}/g);
     return {
-      target,
+      source,
       keys,
       pattern: new RegExp(
         "^" + parts.map(escapePattern).join("([\\s\\S]*?)") + "$",
@@ -35,15 +43,16 @@ export function translate(
   language: Language,
   values?: TranslationValues,
 ): string {
+  const localized = language === "it" ? italian : catalogs[language];
   let result =
-    language === "en"
-      ? catalog[text]
+    language !== "it"
+      ? localized[text]
       : Object.hasOwn(italian, text)
         ? italian[text]
         : text;
   if (result === undefined) {
     const trimmed = text.trim();
-    const plain = catalog[trimmed];
+    const plain = localized[trimmed];
     if (plain !== undefined)
       result =
         text.slice(0, text.indexOf(trimmed)) +
@@ -53,7 +62,7 @@ export function translate(
       for (const entry of patterns) {
         const match = entry.pattern.exec(text);
         if (!match) continue;
-        result = entry.target.replace(
+        result = (localized[entry.source] ?? entry.source).replace(
           /\{(p\d+)\}/g,
           (_, key: string) => match[entry.keys.indexOf(key) + 1],
         );

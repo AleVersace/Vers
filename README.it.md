@@ -25,7 +25,7 @@ complicate operazioni che al tavolo dovrebbero essere semplici.
   di due tiri dei dadi base e applicano i bonus una sola volta.
 - **Gioco condiviso, viste separate:** scene live per i giocatori, vista master,
   personaggi e NPC riutilizzabili e strumenti per l’iniziativa.
-- **Un’installazione tua:** accesso su invito, interfaccia italiana e inglese,
+- **Un’installazione tua:** accesso su invito, interfaccia italiana, inglese, francese e tedesca,
   setup documentato con Firebase, Supabase e Vercel.
 
 Vers è uno strumento flessibile, non un motore completo per ogni regolamento.
@@ -42,7 +42,7 @@ il repository. Leggere, clonare o contribuire al codice non dà accesso a quella
 installazione, ai suoi account, alle campagne o ai file. La guida permette di
 creare una propria istanza con progetti cloud e inviti propri.
 
-L’interfaccia è disponibile in **italiano e inglese**. Usa il toggle **ITA / ENG**
+L’interfaccia è disponibile in **italiano, inglese, francese e tedesco**. Usa il selettore **ITA / ENG / FRA / DEU**
 nella schermata di accesso o nella barra del tavolo: la scelta viene ricordata
 nel browser e si applica subito, senza ricaricare o perdere la selezione del token.
 Nomi, descrizioni e note scritti dai giocatori restano nella lingua originale.

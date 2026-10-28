@@ -5725,7 +5725,28 @@ small {
   outline: 2px solid #e8c481;
   outline-offset: 2px;
 }
+.language-options {
+  display: inline-flex;
+}
+.language-select {
+  display: none;
+  width: 86px;
+  min-height: 30px;
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  background: #1b1c19;
+  color: #efbd79;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.language-select:focus-visible {
+  outline: 2px solid #e8c481;
+  outline-offset: 2px;
+}
 @media (max-width: 720px) {
   .table-top-actions { gap: 5px; }
-  .table-top-actions .language-toggle button { min-width: 32px; padding: 5px; }
+  .language-options { display: none; }
+  .language-select { display: block; }
 }

@@ -106,16 +106,18 @@ any access to test infrastructure. Read [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Interface translations
 
-The interface supports Italian (`it`, the default) and English (`en`). The
-**ITA / ENG** control is available at sign-in, in the tabletop header and in the
-profile. Switching language updates the UI immediately and preserves the open
+The interface supports Italian (`it`, the default), English (`en`), French (`fr`)
+and German (`de`). The **ITA / ENG / FRA / DEU** control is available at sign-in,
+in the tabletop header and in the profile. On narrow screens it becomes a
+compact menu with the four native language names. Switching language updates the UI immediately and preserves the open
 campaign, selected token, drafts and dice results. The preference is stored in
 `localStorage` under `vers:language`, and synchronized across tabs on the same
 origin. With storage blocked, switching still works for the current page.
 Each participant chooses independently; this preference requires no database
 migration, provider configuration or extra translation service.
 
-- Add Italian copy and its English translation to `lib/i18n/messages.ts`, then
+- Add Italian copy and its English translation to `lib/i18n/messages.ts`, add the
+  same key to `messages.fr.ts` and `messages.de.ts`, then
   render it through `t()` from `lib/i18n/store.ts`. Include accessibility labels,
   tooltips, empty states, dialogs and validation messages, not just buttons.
 - Use the catalog's `{p0}`, `{p1}`, etc. placeholders for dynamic values. Translate
@@ -123,8 +125,9 @@ migration, provider configuration or extra translation service.
   descriptions, notes or filenames just because they match a catalog entry.
 - Keep machine identifiers and stored data stable. Saving-throw keys remain
   `FOR`, `DES`, `COS`, `INT`, `SAG`, `CAR`; only their English labels become
-  `STR`, `DEX`, `CON`, `INT`, `WIS`, `CHA`. Damage-type values and mode enums
-  likewise remain unchanged.
+  `STR`, `DEX`, `CON`, `INT`, `WIS`, `CHA`. French labels use `FOR`, `DEX`, `CON`,
+  `INT`, `SAG`, `CHA`; German uses `STÄ`, `GES`, `KON`, `INT`, `WEI`, `CHA`.
+  Damage-type values and mode enums likewise remain unchanged.
 - Store roll payloads in their existing canonical notation. Localize generated
   explanations with `localizeRollBreakdown()` at render time. Translation must
   never invoke the random generator, resave a roll, repeat bonuses or change
@@ -140,7 +143,10 @@ migration, provider configuration or extra translation service.
   Shared-link previews use the server's Italian metadata.
 
 Run `node --test tests/i18n.test.mjs` for catalog, placeholders, persistence,
-provider errors, saving-throw handlers and ADV/DIS localization, followed by the
-complete checks above. Manually check ITA → ENG → reload → ITA; inspect the
-selected token, unsaved form fields, right-click menus and roll log in both
-languages. The UI translation catalog is not a campaign-content translator.
+provider errors, saving-throw handlers and ADV/DIS localization in all four
+languages, followed by the complete checks above. Manually check ITA → ENG →
+FRA → DEU → reload → ITA; inspect the selected token, unsaved form fields,
+right-click menus and roll log in every language. Language names remain native
+(Italiano, English, Français, Deutsch), and `languages.ts` defines their codes,
+formatting locales and Open Graph locales. The UI translation catalog is not a
+campaign-content translator.

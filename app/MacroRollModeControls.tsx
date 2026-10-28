@@ -24,7 +24,7 @@ export function MacroRollModeOptions({
           aria-checked={mode === option}
           className="macro-roll-mode-option"
           onClick={() => onChange(toggleMacroRollMode(mode, option))}
-          title={t("Due tiri dei dadi{p0}: scegli il totale più {p1}.{p2}", { p0: includeBonusHint ? " base" : "", p1: option === "adv" ? t("alto") : t("basso"), p2: includeBonusHint ? t(" Bonus e bonus temporanei una sola volta.") : "" })}
+          title={t("Due tiri dei dadi{p0}: scegli il totale più {p1}.{p2}", { p0: includeBonusHint ? t(" base") : "", p1: option === "adv" ? t("alto") : t("basso"), p2: includeBonusHint ? t(" Bonus e bonus temporanei una sola volta.") : "" })}
         >
           <span className="macro-roll-mode-check" aria-hidden="true">
             {mode === option ? "✓" : ""}

@@ -1,7 +1,7 @@
 # Contributing to Vers
 
 Start with [development setup](docs/DEVELOPMENT.md) and the
-[architecture](docs/architecture.md). The UI supports Italian and English; technical documentation is maintained in
+[architecture](docs/architecture.md). The UI supports Italian, English, French and German; technical documentation is maintained in
 English with an Italian entry point. Follow the [translation guidelines](docs/DEVELOPMENT.md#interface-translations)
 when adding or changing interface copy.
 

@@ -497,6 +497,7 @@ export const english: Record<string, string> = {
 };
 
 export const templates: Record<string, string> = {
+  "{p0} · dadi {p1} / {p2} → tiro {p3}: {p4}": "{p0} · dice {p1} / {p2} → roll {p3}: {p4}",
   "Pannello {p0}": "{p0} panel",
   "Trascina per agganciare {p0}": "Drag to dock {p0}",
   "Espandi {p0}": "Expand {p0}",

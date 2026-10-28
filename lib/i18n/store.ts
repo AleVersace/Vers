@@ -4,6 +4,7 @@ import {
   type Language,
   type TranslationValues,
 } from "./translate.ts";
+import { isLanguage, languageDetails } from "./languages.ts";
 export const LANGUAGE_STORAGE_KEY = "vers:language";
 let language: Language = "it";
 const listeners = new Set<() => void>();
@@ -17,7 +18,7 @@ export const subscribeLanguage = (listener: () => void) => {
   };
 };
 export function setLanguage(next: Language, persist = true) {
-  if (next !== "it" && next !== "en") return;
+  if (!isLanguage(next)) return;
   if (persist && typeof window !== "undefined") {
     try {
       window.localStorage.setItem(LANGUAGE_STORAGE_KEY, next);
@@ -33,4 +34,4 @@ export const t = (text: string, values?: TranslationValues) =>
   translate(text, getLanguage(), values);
 export const errorText = (text: string) => translateError(text, getLanguage());
 export const uiLocale = (language: Language = getLanguage()) =>
-  language === "en" ? "en-US" : "it-IT";
+  languageDetails[language].locale;

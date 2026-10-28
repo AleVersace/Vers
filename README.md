@@ -26,14 +26,14 @@ make playing faster and easier, not to cover every possible rule or setting.
   complete base-dice totals and apply bonuses only once.
 - **A shared table, separate views:** live player scenes, a master view, reusable
   characters and NPCs, and initiative tools for encounters.
-- **Your own installation:** invitation-based access, Italian and English UI,
+- **Your own installation:** invitation-based access, Italian, English, French and German UI,
   and documented deployment using Firebase, Supabase and Vercel.
 
 Vers is a flexible tabletop toolkit, not a complete rules engine for every RPG.
 Some conveniences reflect my own play style, including HP, armor class, saving
 throws and ADV/DIS; use the parts that fit your game.
 Vers is licensed under **AGPL-3.0-only**. You operate your own installation
-and control its campaigns and user access. The interface supports Italian and English: use the **ITA / ENG** toggle at sign-in
+and control its campaigns and user access. The interface supports Italian, English, French and German: use the **ITA / ENG / FRA / DEU** selector at sign-in
 or in the tabletop header. Your choice is saved in this browser.
 The source is publicly available for anyone to inspect, install and contribute
 to under that license.
@@ -60,7 +60,7 @@ your own instance with your own cloud projects and invitations.
   totals are compared; bonuses are applied once. Results appear in the roll log.
 - Keep selected-token details visible while using map tools.
 - Switch all interface labels, menus, confirmations and roll explanations between
-  Italian and English without reloading or changing campaign content.
+  Italian, English, French and German without reloading or changing campaign content.
 
 Fog is visual, not a way to hide downloaded map pixels from a determined player.
 Use separate master-only scenes for confidential images. Read the
