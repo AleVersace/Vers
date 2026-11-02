@@ -4978,9 +4978,9 @@ Source: https://www.npmjs.com/package/@types/ms/v/2.1.0
 
 
 ========================================================================
-@types/node@22.19.19
+@types/node@22.20.5
 License: MIT
-Source: https://www.npmjs.com/package/@types/node/v/22.19.19
+Source: https://www.npmjs.com/package/@types/node/v/22.20.5
 
 
 --- LICENSE ---
@@ -10586,9 +10586,9 @@ SOFTWARE.
 
 
 ========================================================================
-react@19.2.6
+react@19.3.1
 License: MIT
-Source: https://www.npmjs.com/package/react/v/19.2.6
+Source: https://www.npmjs.com/package/react/v/19.3.1
 
 
 --- LICENSE ---
@@ -10617,9 +10617,9 @@ SOFTWARE.
 
 
 ========================================================================
-react-dom@19.2.6
+react-dom@19.3.1
 License: MIT
-Source: https://www.npmjs.com/package/react-dom/v/19.2.6
+Source: https://www.npmjs.com/package/react-dom/v/19.3.1
 
 
 --- LICENSE ---
@@ -10853,9 +10853,9 @@ THE SOFTWARE.
 
 
 ========================================================================
-scheduler@0.27.0
+scheduler@0.28.0
 License: MIT
-Source: https://www.npmjs.com/package/scheduler/v/0.27.0
+Source: https://www.npmjs.com/package/scheduler/v/0.28.0
 
 
 --- LICENSE ---

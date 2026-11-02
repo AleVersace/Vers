@@ -99,6 +99,16 @@ Regenerate third-party notices when production dependencies change.
 Do not blindly merge Dependabot major upgrades; validate Node compatibility,
 the Firebase Admin runtime and the application tests.
 
+Dependabot groups `react`, `react-dom` and both React type packages in one PR,
+including security updates. Update them together manually as well: React DOM
+requires a compatible React release, and its type package has its own peer
+requirement. The runtime smoke test renders a component through the installed
+React DOM package to catch mismatched core/renderer versions. Next.js and
+`eslint-config-next` are also grouped. Keep `@types/node` on the same major as
+the runtime (currently 22); its major-update ignore rule must be revisited
+when intentionally upgrading Node. These groups do not enable automatic merging:
+passing CI and review are still required.
+
 Production secrets must not be configured in Actions. New contributors can run
 tests without cloud accounts, and maintainers can review code before granting
 any access to test infrastructure. Read [CONTRIBUTING.md](../CONTRIBUTING.md).

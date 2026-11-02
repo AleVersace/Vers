@@ -5,6 +5,36 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    groups:
+      # Keep the renderer, core and TypeScript types in one tested PR.
+      # Do not split production and development dependencies in this group.
+      react-stack:
+        patterns:
+          - react
+          - react-dom
+          - "@types/react"
+          - "@types/react-dom"
+      react-stack-security:
+        applies-to: security-updates
+        patterns:
+          - react
+          - react-dom
+          - "@types/react"
+          - "@types/react-dom"
+      next-stack:
+        patterns:
+          - next
+          - eslint-config-next
+      next-stack-security:
+        applies-to: security-updates
+        patterns:
+          - next
+          - eslint-config-next
+    ignore:
+      # Match package.json engines and the Node 22 CI/production runtime.
+      # Review this rule together with any deliberate runtime-major upgrade.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
