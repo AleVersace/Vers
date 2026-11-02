@@ -414,7 +414,7 @@ export const french: Record<string, string> = {
   "Bonus e bonus temporanei una sola volta.": "Les bonus et bonus temporaires ne s’appliquent qu’une fois.",
   "ADV · Vantaggio": "ADV · Avantage",
   "DIS · Svantaggio": "DIS · Désavantage",
-  "Codice sorgente · AGPL-3.0": "Code source · AGPL-3.0",
+  "Codice sorgente · 0BSD": "Code source · 0BSD",
   "Non riesco ad abilitare l'accesso ai dati.": "Impossible d’activer l’accès aux données.",
   "Firebase non ha aggiornato il token di accesso.": "Firebase n’a pas renouvelé le jeton d’accès.",
   "Configurazione pubblica Supabase incompleta.": "La configuration publique de Supabase est incomplète.",

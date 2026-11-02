@@ -1,6 +1,6 @@
 Vers third-party dependency notices
 
-Vers code is AGPL-3.0-only. The dependencies below retain their own licenses.
+Vers code is 0BSD. The dependencies below retain their own licenses.
 Generated from package-lock.json and installed production package notices.
 Keep the original package notices when distributing dependencies or builds.
 

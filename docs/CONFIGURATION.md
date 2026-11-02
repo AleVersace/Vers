@@ -100,9 +100,10 @@ revoking the old credential. See
 [Next.js environment variables](https://nextjs.org/docs/app/guides/environment-variables)
 and [Vercel environment variables](https://vercel.com/docs/environment-variables).
 
-## Source link for automatic releases
+## Optional source link for automatic releases
 
-After making the source accessible to the intended users, set this public URL
+0BSD does not require a source link or disclosure of modifications. To offer
+a convenient link to your installation's source, set this public URL
 on the deployment, replacing the account/repository placeholders:
 
 ```dotenv
@@ -118,14 +119,14 @@ URLs remain supported for operators managing their own release downloads.
 
 Only the resulting URL is exposed to the client. Do not include access tokens,
 signed download parameters or credentials in a public source URL. URLs with
-embedded usernames/passwords are rejected. The source commit and its required
-files must remain accessible; do not delete/rewrite published release history.
+embedded usernames/passwords are rejected. Keep the linked source available
+while advertising the link so readers can inspect the version they are using.
 
 This is a link from your installation to its source. It does not advertise your
 installation in the source repository or open it to repository visitors. Keep
 personal installation URLs out of public repository metadata and documentation.
 
-An empty value hides the link during private preparation. A private GitHub link
+An empty value hides the link. A private GitHub link
 does not make source available to users who cannot access that repository. Keep
 the value empty until the source can actually be opened by its intended users;
 then deploy again and test the link while signed out or as an intended recipient.

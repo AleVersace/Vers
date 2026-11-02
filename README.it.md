@@ -60,8 +60,12 @@ Alcune comodità riflettono il mio stile di gioco, come HP, classe armatura,
 tiri salvezza e ADV/DIS: puoi usare ciò che serve al tuo gruppo.
 La documentazione tecnica principale è in inglese, per facilitare installazione
 e contributi anche dall’estero.
-Il codice è pubblico e distribuito con licenza **AGPL-3.0-only**: chiunque può
-consultarlo, installarlo e contribuire nel rispetto della licenza.
+Il codice è pubblico e distribuito con licenza **[0BSD (BSD Zero Clause)](LICENSE)**:
+puoi usarlo, modificarlo e ridistribuirlo anche per scopi commerciali o in prodotti
+chiusi, senza obblighi di attribuzione o di pubblicazione delle modifiche.
+Contributi e link al progetto sono benvenuti, ma facoltativi. Il codice è fornito
+senza garanzie. Dipendenze, musica e contenuti caricati dagli utenti mantengono
+le proprie licenze: vedi le [note sulla licenza](docs/LICENSING.md).
 
 L’installazione personale del manutentore è un servizio separato, accessibile
 solo su invito. Non è una demo pubblica né un servizio condiviso per chi visita

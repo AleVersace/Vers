@@ -11,7 +11,7 @@ export function SourceLink() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {t("Codice sorgente · AGPL-3.0")}
+      {t("Codice sorgente · 0BSD")}
     </a>
   );
 }

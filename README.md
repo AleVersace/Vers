@@ -58,7 +58,9 @@ make playing faster and easier, not to cover every possible rule or setting.
 Vers is a flexible tabletop toolkit, not a complete rules engine for every RPG.
 Some conveniences reflect my own play style, including HP, armor class, saving
 throws and ADV/DIS; use the parts that fit your game.
-Vers is licensed under **AGPL-3.0-only**. You operate your own installation
+Vers is licensed under **[0BSD (BSD Zero Clause)](LICENSE)**: you can use,
+modify and redistribute the code, including commercially and in closed-source
+products, without an attribution or source-sharing requirement. You operate your own installation
 and control its campaigns and user access. The interface supports Italian, English, French and German: use the **ITA / ENG / FRA / DEU** selector at sign-in
 or in the tabletop header. Your choice is saved in this browser.
 The source is publicly available for anyone to inspect, install and contribute
@@ -178,14 +180,18 @@ real campaign data to an issue.
 
 ## License and content
 
-Copyright 2026 AleVersace and contributors. Code is distributed under
-[GNU Affero General Public License v3.0 only](LICENSE). When offering a modified
-version over a network, provide its corresponding source as required by the
-license, including your changes and installation instructions. Configure
-`NEXT_PUBLIC_SOURCE_URL` for that exact version.
+Copyright 2026 AleVersace. Vers code is distributed under
+[BSD Zero Clause (0BSD)](LICENSE), with no warranty. Use it privately or
+commercially, modify it, redistribute it, or build closed-source versions.
+0BSD does not require attribution or publication of your changes. Contributions
+and a link back are welcome, but optional.
+
+The optional `NEXT_PUBLIC_SOURCE_URL` setting links an installation to its source;
+0BSD does not require that link. See [licensing notes](docs/LICENSING.md) for the
+license transition and the scope of this grant.
 
 Dependencies keep their own licenses; retain [third-party notices](THIRD_PARTY_NOTICES.txt).
 User-uploaded maps, artwork and campaign material are not included in this
-repository or automatically licensed under AGPL. Operators must have permission
+repository or automatically licensed under 0BSD. Operators must have permission
 to use the content they upload. Vers is an independent project, with no
 claimed affiliation with game publishers or hosting providers.

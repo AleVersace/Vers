@@ -44,7 +44,7 @@ attribution. Credit is included in both end cards, this page and the release
 notes. If you repost either video, preserve the credit and put it in the post
 or video description too; the artist specifically requires description credits
 on YouTube. Do not claim ownership of the music or register it with Content ID.
-The music retains its CC BY 4.0 license; the application's AGPL license does not
+The music retains its CC BY 4.0 license; the application's 0BSD license does not
 replace the track's license. The release distributes the finished videos with
 the music synchronized to the images, rather than a standalone music file.
 
