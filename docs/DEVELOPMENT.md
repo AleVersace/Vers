@@ -29,7 +29,7 @@ production output.
 | `npm start` | Serves an existing production build |
 | `npm run lint` | Runs ESLint |
 | `npm test` | Builds, then runs Node's test suite |
-| `npm audit --audit-level=low` | Checks known dependency advisories |
+| `npm run security:audit` | Checks dependency advisories with the [reviewed policy](DEPENDENCY-SECURITY.md) |
 | `npm run security:check` | Scans distributable files for secrets and privacy issues |
 | `node scripts/publication-guards.mjs OWNER/REPO` | Reads the public-launch state; never changes visibility or settings without `--apply` |
 | `npm run supabase -- COMMAND` | Runs the project-pinned Supabase CLI |
