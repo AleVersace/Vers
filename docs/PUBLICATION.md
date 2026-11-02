@@ -1,6 +1,6 @@
 # Publishing Vers and keeping automatic deployment
 
-Vers publishes its reviewed source under AGPL-3.0-only. Publishing source does
+Vers publishes its reviewed source under 0BSD. Publishing source does
 not authorize access to a hosted campaign. The checklist below also applies to
 future releases and independently maintained forks.
 
@@ -94,10 +94,10 @@ and [operations](OPERATIONS.md#upgrades).
       re-import the `verify` Deployment Check. Verify the next deployment.
 - [ ] Confirm production-only environment scopes, protected build logs/source,
       Git Fork Protection, stable Node 22 runtime and a passing blocking check.
-- [ ] Provide a source URL accessible to the intended users for the actual
-      deployed version, with AGPL and third-party notices. A private URL that
-      users cannot open is not a working source offer. Rebuild after setting
-      `NEXT_PUBLIC_SOURCE_URL`; keep the corresponding version available.
+- [ ] Preserve the licenses and notices required by distributed dependencies.
+      The source link is optional under 0BSD. If enabled, point
+      `NEXT_PUBLIC_SOURCE_URL` to the deployed version, make it accessible to
+      its intended readers, rebuild and test the link.
 - [ ] Review the public product name and rights to any distributed artwork.
       Player uploads are not part of the source release.
 - [ ] Remove outdated statements that the repository is private only when the
@@ -156,7 +156,7 @@ second person's approval is required by this single-maintainer baseline, so
 the maintainer is not locked out of their own PRs. Add reviewer requirements
 deliberately when there are enough trusted maintainers.
 
-Finally configure the [commit-specific source URL](CONFIGURATION.md#source-link-for-automatic-releases),
+If desired, configure the [commit-specific source URL](CONFIGURATION.md#optional-source-link-for-automatic-releases),
 update statements that the repository is private, deploy, and verify the source
 link and the private vulnerability-reporting form as an ordinary GitHub user.
 Keep a record of the exact deployed commit and smoke-check result.

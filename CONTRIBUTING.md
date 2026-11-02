@@ -45,9 +45,9 @@ Security reports follow [SECURITY.md](SECURITY.md), not a public bug report.
 
 ## License and content
 
-Contributions are licensed under AGPL-3.0-only, like the project. Submit only
-code or material you have the right to distribute. Preserve original copyright
-and dependency notices, and identify modifications as required by the license.
+Contributions are licensed under 0BSD, like the project. Submit only
+code or material you have the right to distribute. Preserve third-party notices
+and identify modifications where the relevant dependency license requires it.
 Do not add campaign artwork, proprietary rulebook text or personal invitations
 to example data. Use your GitHub noreply address if you do not want your personal
 email to become part of Git history.

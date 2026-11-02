@@ -49,5 +49,5 @@
     "minimatch@>=9": "11.0.4"
   },
   "type": "module",
-  "license": "AGPL-3.0-only"
+  "license": "0BSD"
 }

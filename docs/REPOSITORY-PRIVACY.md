@@ -1,6 +1,6 @@
 # Repository privacy and publication
 
-Vers publishes its reviewed source under AGPL-3.0-only. The maintainer's personal
+Vers publishes its reviewed source under 0BSD. The maintainer's personal
 installation, cloud configuration, campaign data and original archive repositories
 remain private. Source access does not grant service access.
 
@@ -89,9 +89,9 @@ protection and settings that become available on a public repository.
    already committed.
 5. Verify deployment protections and environment separation. Keep production
    data and secrets out of fork builds and previews.
-6. Retain AGPL and dependency notices; ensure the source link points to the
-   corresponding deployed version and is accessible to the users entitled to
-   receive it. Review uploaded-content rights and the proposed public branding.
+6. Preserve required dependency notices. The source link is optional under
+   0BSD; if enabled, ensure it points to the deployed version and is accessible
+   to its intended readers. Review uploaded-content rights and public branding.
 7. Change repository visibility only after an explicit maintainer decision.
 
 If a secret is exposed, rotate/revoke it first and review its use. Removing a

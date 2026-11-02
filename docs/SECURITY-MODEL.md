@@ -41,5 +41,5 @@ Use separate Firebase/Supabase projects and credentials for development, preview
 and production. Do not give fork pull requests production variables. CI uses
 synthetic data, no cloud credentials and read-only GitHub permissions. Review
 untrusted changes before running them locally or deploying them. See [deployment](DEPLOYMENT.md)
-for the migration order and source availability requirement, and
+for the migration order and optional source link configuration, and
 [repository privacy](REPOSITORY-PRIVACY.md) for source-publication checks.

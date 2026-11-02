@@ -481,7 +481,7 @@ export const english: Record<string, string> = {
     "Bonuses and temporary bonuses apply once.",
   "ADV · Vantaggio": "ADV · Advantage",
   "DIS · Svantaggio": "DIS · Disadvantage",
-  "Codice sorgente · AGPL-3.0": "Source code · AGPL-3.0",
+  "Codice sorgente · 0BSD": "Source code · 0BSD",
   "Non riesco ad abilitare l'accesso ai dati.": "Unable to enable data access.",
   "Firebase non ha aggiornato il token di accesso.":
     "Firebase did not refresh the access token.",

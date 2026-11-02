@@ -414,7 +414,7 @@ export const german: Record<string, string> = {
   "Bonus e bonus temporanei una sola volta.": "Boni und temporäre Boni werden nur einmal angewendet.",
   "ADV · Vantaggio": "ADV · Vorteil",
   "DIS · Svantaggio": "DIS · Nachteil",
-  "Codice sorgente · AGPL-3.0": "Quellcode · AGPL-3.0",
+  "Codice sorgente · 0BSD": "Quellcode · 0BSD",
   "Non riesco ad abilitare l'accesso ai dati.": "Datenzugriff konnte nicht aktiviert werden.",
   "Firebase non ha aggiornato il token di accesso.": "Firebase hat das Zugriffstoken nicht erneuert.",
   "Configurazione pubblica Supabase incompleta.": "Die öffentliche Supabase-Konfiguration ist unvollständig.",

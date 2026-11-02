@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 const lock = JSON.parse(readFileSync('package-lock.json','utf8'));
-const notices = ['Vers third-party dependency notices\n\nVers code is AGPL-3.0-only. The dependencies below retain their own licenses.\nGenerated from package-lock.json and installed production package notices.\nKeep the original package notices when distributing dependencies or builds.\n'];
+const notices = ['Vers third-party dependency notices\n\nVers code is 0BSD. The dependencies below retain their own licenses.\nGenerated from package-lock.json and installed production package notices.\nKeep the original package notices when distributing dependencies or builds.\n'];
 const seen = new Set();
 for (const [path, entry] of Object.entries(lock.packages).sort()) {
   if (!path || entry.dev || !existsSync(join(path,'package.json'))) continue;
