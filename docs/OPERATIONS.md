@@ -164,7 +164,7 @@ set the existing bucket ID before deploying and do not replay historical SQL.
 
 1. Record the deployed commit and migration versions. Back up the data/files.
 2. Read the diff and test with development projects.
-3. Run `npm ci`, `npm run lint`, `npm test`, `npm audit --audit-level=low`
+3. Run `npm ci`, `npm run lint`, `npm test`, `npm run security:audit`
    and `npm run security:check`.
 4. Check the target with `npm run supabase -- projects list` and
    `npm run supabase -- migration list --linked`.

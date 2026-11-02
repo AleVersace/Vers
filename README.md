@@ -159,12 +159,14 @@ test suite, however, uses disposable local data and does not require cloud keys.
 ```sh
 npm run lint
 npm test
-npm audit --audit-level=low
+npm run security:audit
 npm run security:check
 ```
 
 `npm test` builds the app, then runs the tests. Build-time font downloads need
-network access. Install Gitleaks before the last command; see
+network access. The [dependency security review](docs/DEPENDENCY-SECURITY.md)
+documents the audit policy and its narrow, expiring false-positive exception.
+Install Gitleaks before the last command; see
 [development tooling](docs/DEVELOPMENT.md). CI runs these checks with synthetic
 data and read-only GitHub permissions, without production credentials.
 
